@@ -9,7 +9,7 @@ namespace Contact_Management_Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    // [Authorize]
+    [Authorize]
     public class ContactsController : ControllerBase
     {
         private readonly ContactJsonFile _jsonFileService;
