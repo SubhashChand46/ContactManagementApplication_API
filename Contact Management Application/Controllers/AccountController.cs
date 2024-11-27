@@ -20,6 +20,7 @@ namespace Contact_Management_Application.Controllers
         {
             _accountLogin = accountLogin;
             _jwtAuthManager = jwtAuthManager;
+           
         }
         [HttpPost("Login")]
         [AllowAnonymous]

@@ -1,6 +1,8 @@
-using BusinessLib.Contact;
+
 using CMS.JwtGenerator;
+using Contact_Management_Application.Middleware;
 using Contact_Management_Application.Services;
+using Hangfire;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -12,7 +14,7 @@ IServiceCollection services = new ServiceCollection();
 builder.Services.AddSingleton(jwtTokenConfig);
 builder.Services.AddSingleton<ContactJsonFile>();
 builder.Services.AddSingleton<AccountLoginFile>();
-builder.Services.AddSingleton<IJwtAuthManager,JwtAuthManager>();
+builder.Services.AddSingleton<IJwtAuthManager, JwtAuthManager>();
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -37,11 +39,11 @@ builder.Services.AddAuthentication(x =>
 //services.AddJwtAuth();
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<IContactService, ContactService>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//builder.Services.AddScoped<ContactJsonFile>();
+
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -92,7 +94,7 @@ app.UseCors("CMS");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.MapControllers();
 
 app.Run();

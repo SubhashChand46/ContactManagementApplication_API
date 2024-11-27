@@ -5,9 +5,7 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact Management Application", "Contact Management Application\Contact Management Application.csproj", "{F560C899-8907-4DC4-A6CD-40A0BCB5E89E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLib", "BusinessLib\BusinessLib.csproj", "{FFBA2933-8EBD-4EB6-AE17-D10F38EB0521}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.JwtValidator", "CMS.JwtValidator\CMS.JwtValidator.csproj", "{D0430668-60AC-4CE9-BEF8-C147DB742994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CMS.JwtValidator", "CMS.JwtValidator\CMS.JwtValidator.csproj", "{D0430668-60AC-4CE9-BEF8-C147DB742994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{F560C899-8907-4DC4-A6CD-40A0BCB5E89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F560C899-8907-4DC4-A6CD-40A0BCB5E89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F560C899-8907-4DC4-A6CD-40A0BCB5E89E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FFBA2933-8EBD-4EB6-AE17-D10F38EB0521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFBA2933-8EBD-4EB6-AE17-D10F38EB0521}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFBA2933-8EBD-4EB6-AE17-D10F38EB0521}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFBA2933-8EBD-4EB6-AE17-D10F38EB0521}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0430668-60AC-4CE9-BEF8-C147DB742994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0430668-60AC-4CE9-BEF8-C147DB742994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0430668-60AC-4CE9-BEF8-C147DB742994}.Release|Any CPU.ActiveCfg = Release|Any CPU

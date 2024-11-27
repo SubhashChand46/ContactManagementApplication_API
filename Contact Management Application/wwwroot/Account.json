@@ -1,7 +1,1 @@
-[
-  {
-    "Id": 1,
-    "Password": "admin@123",
-    "Email": "admin@gmail.com"
-  }
-]
+[{"Id":1,"Email":"admin@gmail.com","Password":"admin@123"},{"Id":2,"Email":"subhash@gmail.com","Password":"utl@123"}]
